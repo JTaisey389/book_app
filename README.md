@@ -1,7 +1,7 @@
 # Project Name
 
 **Author**: Your Name Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 1.1.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 This assignment will provide users access to books within google's vast library. Thanks to some cool forms a user will be able to search for the title of books and possibly even search for authors as the page is developed. 
