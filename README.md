@@ -69,22 +69,15 @@ Estimate of time needed to complete: 30 minutes
 
 Start time: 9:00 pm
 
-Finish time: 9:30 pm
+Finish time: 9:25 pm
 
-Actual time needed to complete: 30 minutes
+Actual time needed to complete: 25 minutes
 
 **Number and name of feature: Feature 6 Index location**
 Estimate of time needed to complete: 30 minutes
 
-Start time: 9:30 pm
+Start time: 9:25 pm
 
-Finish time: 10:00 pm
+Finish time: 9:30 pm
 
-Actual time needed to complete: 30 minutes
-
-http://localhost:3000
-
-### PROOF OF LIFE PART 2
-- in your web broswer go to searches/new in the browser. 
-- I should see the form with all the radio buttons
-- Check on the form action in HTML and update according to the trello card
+Actual time needed to complete: 5 minutes
