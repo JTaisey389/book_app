@@ -57,4 +57,4 @@ function Books(object) {
 
 
 // ============= Listen ==============
-app.listen(PORT, () => console.log(`up on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`up on http://localhost:${PORT}/index.ejs`));
