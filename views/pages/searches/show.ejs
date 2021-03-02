@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book App</title>
+</head>
+<body>
+  <h2>Search Results</h2>
+  <div class="Results">
+    <% for (let i=0; i < bookArr.length; i++) { %>
+    <li><img src="<%= bookArr[i].title %>" alt=""></li>
+    <li><h3 class="title"><%= bookArr[i].title %></h3></li>
+    <li><p class="author"><%= bookArr[i].authors %></p></li>
+    <li><p class="description"><%= bookArr[i].description %></p></li>
+    <li><p class="pubDate"><%= bookArr[i].pubDate %></p></li>
+  </div>
+  <% } %>
+</body>
+</html>
