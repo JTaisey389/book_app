@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book App</title>
+</head>
+<body>
+  <h1>Books</h1>
+  <form action="/create-books" method="POST"> //I think create-books is potato
+    title<input type="radio" value="super star" name="Book Title">
+    genre<input type="radio" value="super star" name="theyAre">
+    <input type="submit">
+    <ul>
+      <li> 
+        <h2>
+          Book Title
+        </h2>
+        <p>
+          The river runs through it. 
+          <!-- <%= title %>  I think we pass this in with the server.js to push the title stuff to the page-->
+        </p>
+      </li>
+      <% for(let i =0; i < booksArray.length; i++) {%>
+      <li>
+        <h2><%= booksArray[i].name %></h2>
+        <p>Name: <$= booksArray[i].hobby %></p>
+      </li>
+      < }%>
+    </ul>
+  </form>
+</body>
+</html>
