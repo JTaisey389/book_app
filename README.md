@@ -37,14 +37,23 @@ Finish time: 4:00 pm
 
 Actual time needed to complete: 1 hour thirty minutes
 
-**Number and name of feature: Feature 1 Basic Server Proof of Life**
+**Number and name of feature: Feature 2 Publishing Basic Data**
 Estimate of time needed to complete: 30 minutes
 
 Start time: 4:00 pm
 
-Finish time: 5:00 pm
+Finish time: 6:00 pm
 
-Actual time needed to complete: 1 hour 
+Actual time needed to complete: 2 hours 
+
+**Number and name of feature: Feature 3 Searching Results**
+Estimate of time needed to complete: 90 minutes
+
+Start time: 7:00 pm
+
+Finish time: 6:00 pm
+
+Actual time needed to complete: 2 hours 
 
 http://localhost:3000
 

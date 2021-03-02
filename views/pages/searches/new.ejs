@@ -7,19 +7,19 @@
     <title>Book App</title>
   </head>
   <body>
-    <h1>Books</h1>
-    <form action="/create-books" method="POST">
-      title<input type="radio" value="super star" name="Book Title" />
-      <input type="submit" />
-      <ul>
-        <% for(let i = 0; i < paperback.length; i++){ %>
-
-        <li>
-          <h2><%= paperback[i].title %></h2>
-          <p>Hobby: <%= paperback[i].author %></p>
-        </li>
-        <% } %>
-      </ul>
+    <h1>Search For Google Books</h1>
+    <form action="/searches/new" method="POST">
+      <fieldset>
+        <legend>
+          <label for="searchBy">Type your search here</label>
+          <input type="text" name="bookSearch" id="searchBy">
+          <label for="author">Author/label>
+          <input type="radio" name="search" id="author" value="author">
+          <label for="title">Title</label>
+          <input type="radio" name="search" id="Title" value="Title">
+          <input type="submit" value="">
+        </legend>
+      </fieldset>
     </form>
   </body>
 </html>
