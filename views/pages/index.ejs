@@ -7,8 +7,24 @@
   <title>Book App</title>
 </head>
 <body>
-  <h1>Hello World!!!</h1>
-  <form action="/create-books" method="POST">
+  Show Books Page
+  <form action="/server.js" method="POST">
+    <fieldset>
+      <legend>Add a Book</legend>
+      <label for="">Add Book</label>
+      <input type="submit">
+    </fieldset>
   </form>
+    <ul>
+      <% for (let i = 0; i < allBooks.length; i++){ %>
+      <li>
+        <h2><%= allBooks[i].name %></h2>
+        <p>Title: <%= allBooks[i].title_name %></p>
+          <a href="/books/<%= allBooks[i].id %>"><button>View Details</button></a>
+      </li>
+     <% } %>
+    </ul>
+    <!-- LOOP here for the BOOKs object -->
+  
 </body>
 </html>
