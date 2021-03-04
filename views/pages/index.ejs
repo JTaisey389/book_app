@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book App</title>
-</head>
-<body>
-  Show Books Page
-  <form action="/server.js" method="POST">
-    <fieldset>
-      <legend>Add a Book</legend>
-      <label for="">Add Book</label>
-      <input type="submit">
-    </fieldset>
-  </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book App</title>
+  </head>
+  <body>
+    Show Books Page
+    <p>Total number of books in my collection <%= count %></p>
     <ul>
       <% for (let i = 0; i < allBooks.length; i++){ %>
-      <li>
-        <h2><%= allBooks[i].name %></h2>
-        <p>Title: <%= allBooks[i].title_name %></p>
-          <a href="/books/<%= allBooks[i].id %>"><button>View Details</button></a>
-      </li>
-     <% } %>
+      <li><h3 class="title"><%= allBooks[i].title %></h3></li>
+      <li><p class="author"><%= allBooks[i].author %></p></li>
+      <li><img src="<%= allBooks[i].image %>" alt="" /></li>
+      <a href="/books/<%= allBooks[i].id %>"><button>View Details</button></a>
+      <% } %>
     </ul>
-    <!-- LOOP here for the BOOKs object -->
-  
-</body>
+  </body>
 </html>

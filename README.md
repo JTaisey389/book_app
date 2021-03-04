@@ -1,7 +1,7 @@
 # Project Name
 
 **Author**: Jason Taisey
-**Version**: 2.6.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 3.8.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ### Notes
 
@@ -11,6 +11,7 @@
 - Update
 - Delete
 
+psql book_api_search -f book.sql (This will update the database whenever you make changes)
 ### SQL
 - In SQL indexes start at 1
 
@@ -58,7 +59,11 @@ HTML, EJS, JavaScript, CSS, .Env, JSON packages, GitIgnores
 
 03-02-2021 
 
+  **Day Three**
 
+03-02-2021 8:15 Deployed the saved books to a page that holds all my favorite books
+
+03-02-2021 9:15: Sucessfully got the pages to display individual books 
 
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -124,14 +129,37 @@ Finish time: 9:30 pm
 Actual time needed to complete: 5 minutes
 
 **03/02/2021**
-**Number and name of feature:**
+**Number and name of feature:  2 Displaying my favorite books** 
 Estimate of time needed to complete: 2 hours
 
 Start time: 1:40
 
-Finish time: 
+Finish time: Spilled into wednesday
 
 Actual time needed to complete:
+
+**03/03/2021**
+
+**Number and name of feature: Feature 1 Display my books **
+Estimate of time needed to complete: 3 hours
+
+Start time: 1:40pm
+
+Finish time: 6:00 pm
+
+Actual time needed to complete: 5 hours 20 min
+
+
+**Number and name of feature: Feature 3 View Search and add to the collection**
+Estimate of time needed to complete: 2 hours 
+
+Start time: 7:00 pm
+
+Finish time: 9:15 pm
+
+Actual time needed to complete: 2 hours 15 min
+
+03/04/2021
 
 **Number and name of feature:**
 Estimate of time needed to complete: 
@@ -141,33 +169,3 @@ Start time:
 Finish time: 
 
 Actual time needed to complete:
-
-**Number and name of feature:**
-Estimate of time needed to complete: 
-
-Start time: 
-
-Finish time: 
-
-Actual time needed to complete:
-
-**Number and name of feature:**
-Estimate of time needed to complete: 
-
-Start time: 
-
-Finish time: 
-
-Actual time needed to complete:
-
-**Number and name of feature:**
-Estimate of time needed to complete: 
-
-Start time: 
-
-Finish time: 
-
-Actual time needed to complete:
-
-
-

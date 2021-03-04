@@ -1,3 +1,3 @@
-INSERT INTO book_table (title, author, description, image) VALUES ();
+INSERT INTO book_table (title, author, description, pubdate, image) VALUES ();
 
 
