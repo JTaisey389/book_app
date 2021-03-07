@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/base.css" />
     <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/modules.css" />
-  <title>Book App</title>
-</head>
-<body>
-  <section>
-    <ul>
-      <li><img src="<%= newBook.image %>" alt=""></li>
-      <li><h3 class="title"><%= newBook.title %></h3></li>
-      <li><p class="author"><%= newBook.author %></p></li>
-      <li><p class="description"><%= newBook.description %></p></li>
-      <li><p class="ISBN"><%= newBook.ISBN %></p></li>
-    </ul>
-  </section>
-</body>
+    <title>Book App</title>
+  </head>
+  <body>
+    <header>
+      <h1>All About Books!</h1>
+      <nav>
+        <h3><a href="/">Home</a></h3>
+        <h3><a href="/searches/new">Search for Books</a></h3>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <a href="/">Return to Menu</a>
+      </div>
+      <section class="book-details">
+        <ul>
+          <li><img src="<%= singleBook.image_url %>" /></li>
+          <li><%= singleBook.title %></li>
+          <li><%= singleBook.author %></li>
+          <li><%= singleBook.description %></li>
+          <li><%= singleBook.details %></li>
+        </ul>
+
+        <a href="/books/<%= singleBook.id%>/edit">
+          <button>Update Details</button>
+        </a>
+
+        <form action="/books/<%= singleBook.id %>?_method=DELETE" method="post">
+          <button type="submit">Remove Book</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

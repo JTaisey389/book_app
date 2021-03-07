@@ -11,21 +11,31 @@
     <title>Book App</title>
   </head>
   <body>
-    <h1>Search For Google Books</h1>
-    <form action="/searches/new" method="POST">
-      <fieldset>
-        <legend>
-          <label for="searchBy">Type your search here</label>
-          <input type="text" name="bookSearch" id="searchBy">
-          <label for="author">Author</label>
-          
-          <input type="radio" name="search" id="author" value="author">
-          <label for="title">Title</label>
-          
-          <input type="radio" name="search" id="Title" value="Title">
-          <input type="submit" value="">
-        </legend>
-      </fieldset>
-    </form>
+    <header>
+      <h1>All About Books!</h1>
+      <nav>
+        <h3><a href="/">Home</a></h3>
+        <h3><a href="/searches/new">Search for Books</a></h3>
+      </nav>
+    </header>
+    <main>
+      <form action="/searches" method="POST">
+        <fieldset>
+          <label><h2>Search by Title or Author</h2></label>
+          <input
+            class="user-input"
+            name="bookSearch"
+            type="text"
+            placeholder="Enter the name of the author or the Title of a book"/>
+          <div class="radio">
+            Title<input type="radio" name="search" value="title"/>
+          </div>
+          <div class="radio">
+            Author<input type="radio" name="search" value="author"/>
+          </div>
+          <input class="button" type="submit"/>
+        </fieldset>
+      </form>
+    </main>
   </body>
 </html>
