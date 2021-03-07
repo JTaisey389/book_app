@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, 
-  initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/base.css" />
     <link rel="stylesheet" href="/styles/layout.css" />
@@ -15,26 +11,33 @@
     <title>Book App</title>
   </head>
   <body>
-    <h2>Search Results</h2>
-    <div class="Results">
-      <% for (let i=0; i < bookArr.length; i++) { %>
-      <form action="/books/added" method="POST">
-        <fieldset>
-          <input type="hidden" name="title" value="<%= bookArr[i].title %>">
-          <input type="hidden" name="author" value="<%= bookArr[i].author %>">
-          <input type="hidden" name="description" value="<%= bookArr[i].description %>">
-          <input type="hidden" name="image" value="<%= bookArr[i].image %>">
-          <input type="submit" />
-          <legend>Add a Book</legend>
-          <label for="">Add Book</label>
-        </fieldset>
-      </form>
-      <li><h3 class="title"><%= bookArr[i].title %></h3></li>
-      <li><p class="author"><%= bookArr[i].author %></p></li>
-      <li><p class="description"><%= bookArr[i].description %></p></li>
-      <li></li>
-      <li><img src="<%= bookArr[i].image %>" alt=""></li>
-    </div>
-    <% } %>
+    <header>
+      <h1>All About Books!</h1>
+      <nav>
+        <h3><a href="/">Home</a></h3>
+        <h3><a href="/searches/new">Search for Books</a></h3>
+      </nav>
+    </header>
+    <main>
+      <div class="book-results">
+        <h2>Search Results</h2>
+        <% for (let i = 0; i < bookArr.length; i++) { %>
+        <ul>
+          <li><img src="<%= bookArr[i].image %>" /></li>
+          <li class="book-title"><%= bookArr[i].title %></li>
+          <li class="book-author"><%= bookArr[i].authors %></li>
+          <li class="book-description"><%= bookArr[i].description %></li>
+        </ul>
+        <form action="/books" method="POST">
+          <input type="hidden" name="author" value="<%= bookArr[i].authors %>" />
+          <input type="hidden" name="title" value="<%= bookArr[i].title %>" />
+          <input type="hidden" name="isbn" value="<%= bookArr[i].isbn %>" />
+          <input type="hidden" name="image" value="<%= bookArr[i].image %>" />
+          <input type="hidden" name="description" value="<%= bookArr[i].description %>"/>
+          <button type="submit">Save to Collection</button>
+        </form>
+        <% } %>
+      </div>
+    </main>
   </body>
 </html>

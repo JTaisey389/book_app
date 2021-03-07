@@ -1,7 +1,7 @@
 # Project Name
 
 **Author**: Jason Taisey
-**Version**: 3.8.0 (increment the patch/fix version number if you make more commits past your first submission)
+**Version**: 7.8.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ### Notes
 
@@ -11,7 +11,14 @@
 - Update
 - Delete
 
-psql book_api_search -f book.sql (This will update the database whenever you make changes)
+psql book_api_search -f books.sql (This will update the database whenever you make changes)
+
+psql book__api_search-f data/schema.sql -d book__api_search
+
+ \dt database table
+
+select * from books;
+
 ### SQL
 - In SQL indexes start at 1
 

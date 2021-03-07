@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/reset.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/layout.css" />
+  <link rel="stylesheet" href="/styles/modules.css" />
+  <title>Book App</title>
+</head>
+<body>
+  <header>
+    <h1>All About Books!</h1>
+    <nav>
+      <h3><a href="/">Home</a></h3>
+      <h3><a href="/searches/new">Search for Books</a></h3>
+    </nav>
+  </header>
+  <main>
+    <form action="/books/<%= singleBook.id %>?_method=PUT" method="post">
+      <input type="text" name="author" value="<%= singleBook.author %>">
+      <input type="text" name="title" value="<%= singleBook.title %>">
+      <input type="text" name="isbn" value="<%= singleBook.isbn %>">
+      <input type="text" name="image" value="<%= singleBook.image %>">
+      <input type="text" name="description" value="<%= singleBook.description %>">
+      <input type="text" value="save" name="update book">
+    </form>
+  </main>
+</body>
+</html>

@@ -1,3 +1,3 @@
-INSERT INTO book_table (title, author, description, pubdate, image) VALUES ();
+INSERT INTO book_api_search (author, title, isbn, image, description) VALUES ();
 
 
